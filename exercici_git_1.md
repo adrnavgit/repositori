@@ -91,6 +91,7 @@ git status
 
 
 **Exercici 6**
+-
 
 Ignorar tots els fitxers que comencen per "daw", tots els que tenen l'extensió out, jpg, png, bmp i gif.
 
