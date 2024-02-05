@@ -1,67 +1,70 @@
-Exercici GIT 3: Desfer canvis
+**Exercici GIT 3: Desfer canvis**
+=
 
-Exercici 1
+**Exercici 1**
+-
 
-**1.** Elimina l\'última línia del fitxer index.txt i guarda-ho.
+**1.** Elimina l'última línia del fitxer index.txt i guarda-ho.
 
 nano index.txt
 
-\> ~~Capítol 5: Conceptes avançats~~
+> ~~Capítol 5: Conceptes avançats~~
 
-**2.** Comprova l\'estat del repositori.
+**2.** Comprova l'estat del repositori.
 
 git status
 
-**3.** Desfés els canvis realitzats al fitxer index.txt per tornar a la
-versió anterior del fitxer.
+**3.** Desfés els canvis realitzats al fitxer index.txt per tornar a la versió anterior del fitxer.
 
 git restore index.txt
 
-**4.** Torna a comprovar l\'estat del repositori.
+**4.** Torna a comprovar l'estat del repositori.
 
 git status
 
-Exercici 2
 
-**1.** Elimina l\'última línia del fitxer index.txt i guarda-ho.
+**Exercici 2**
+-
+
+**1.** Elimina l'última línia del fitxer index.txt i guarda-ho.
 
 nano index.txt
 
-\> ~~Capítol 5: Conceptes avançats~~
+> ~~Capítol 5: Conceptes avançats~~
 
-**2.** Afegeix els canvis a la zona d\'intercanvi temporal.
+**2.** Afegeix els canvis a la zona d'intercanvi temporal.
 
 git add index.txt
 
-**3.** Comprova de nou l\'estat del repositori.
+**3.** Comprova de nou l'estat del repositori.
 
 git status
 
-**4.** Treu els canvis de la zona d\'intercanvi temporal, però
-mantín-los al directori de treball.
+**4.** Treu els canvis de la zona d'intercanvi temporal, però mantín-los al directori de treball.
 
-git restore \--staged index.txt
+git restore --staged index.txt
 
-**5.** Comprova de nou l\'estat del repositori.
+**5.** Comprova de nou l'estat del repositori.
 
 git status
 
-**6.** Desfés els canvis realitzats al fitxer index.txt per tornar a la
-versió anterior del fitxer.
+**6.** Desfés els canvis realitzats al fitxer index.txt per tornar a la versió anterior del fitxer.
 
 git restore index.txt
 
-**7.** Torna a comprovar l\'estat del repositori.
+**7.** Torna a comprovar l'estat del repositori.
 
 git status
 
-Exercici 3
 
-**1.** Elimina l\'última línia del fitxer index.txt i guardar-ho.
+**Exercici 3**
+-
+
+**1.** Elimina l'última línia del fitxer index.txt i guardar-ho.
 
 nano index.txt
 
-\> ~~Capítol 5: Conceptes avançats~~
+> ~~Capítol 5: Conceptes avançats~~
 
 **2.** Elimina el fitxer capítols/capitol3.txt.
 
@@ -71,77 +74,74 @@ rm capítols/capitol3.txt
 
 nano capítols/capitol4.txt
 
-\> Capítol 4
+> Capítol 4
 
-**4.** Afegeix els canvis a la zona d\'intercanvi temporal.
+**4.** Afegeix els canvis a la zona d'intercanvi temporal.
 
-git add \*
+git add *
 
-**5.** Comprova de nou l\'estat del repositori.
-
-git status
-
-**6.** Treu els canvis de la zona d\'intercanvi temporal, però
-mantín-los al directori de treball.
-
-git restore \--staged \*
-
-**7.** Comprova de nou l\'estat del repositori.
+**5.** Comprova de nou l'estat del repositori.
 
 git status
 
-**8.** Desfés els canvis realitzats per tornar a la versió del
-repositori.
+**6.** Treu els canvis de la zona d'intercanvi temporal, però mantín-los al directori de treball.
 
-git restore \*
+git restore --staged *
 
-**9.** Torna a comprovar l\'estat del repositori.
+**7.** Comprova de nou l'estat del repositori.
 
 git status
 
-Exercici 4
+**8.** Desfés els canvis realitzats per tornar a la versió del repositori.
 
-**1.** Elimina l\'última línia del fitxer index.txt i guardar-ho.
+git restore *
+
+**9.** Torna a comprovar l'estat del repositori.
+
+git status
+
+
+**Exercici 4**
+-
+
+**1.** Elimina l'última línia del fitxer index.txt i guardar-ho.
 
 nano index.txt
 
-\> ~~Capítol 5: Conceptes avançats~~
+> ~~Capítol 5: Conceptes avançats~~
 
 **2.** Elimina el fitxer capítols/capitol3.txt.
 
 rm capítols/capitol3.txt
 
-**3.** Afegeix els canvis a la zona d\'intercanvi temporal i fer un
-commit amb el missatge \"Borrat accidental.\"
+**3.** Afegeix els canvis a la zona d'intercanvi temporal i fer un commit amb el missatge "Borrat accidental".
 
-git add \*
+git add *
 
 git commit -m "Borrat accidental"
 
-**4.** Comprova l\'historial del repositori.
+**4.** Comprova l'historial del repositori.
 
-git log \--oneline
+git log --oneline
 
-**5.** Desfés l\'últim commit, però mantín els canvis anteriors al
-directori de treball i a la zona d\'intercanvi temporal.
+**5.** Desfés l'últim commit, però mantín els canvis anteriors al directori de treball i a la zona d'intercanvi temporal.
 
-git reset \--soft HEAD\~1
+git reset --soft HEAD~1
 
-**6.** Comprova l\'historial i l\'estat del repositori.
+**6.** Comprova l'historial i l'estat del repositori.
 
-git log \--oneline
+git log --oneline
 
 git status
 
-**7.** Torna a fer el commit amb el mateix missatge d\'abans.
+**7.** Torna a fer el commit amb el mateix missatge d'abans.
 
 git commit -m "Borrat accidental"
 
-**8.** Desfés l\'últim commit i els canvis anteriors al directori de
-treball, tornant a la versió anterior del repositori.
+**8.** Desfés l'últim commit i els canvis anteriors al directori de treball, tornant a la versió anterior del repositori.
 
-git reset \--hard HEAD\~1
+git reset --hard HEAD~1
 
-**9.** Comprova de nou l\'historial i l\'estat del repositori.
+**9.** Comprova de nou l'historial i l'estat del repositori.
 
-git log \--oneline\|git status
+git log --oneline\|git status
